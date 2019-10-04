@@ -210,20 +210,6 @@ exports.createPages = async ({actions, graphql}, options) => {
       context: {
         id,
         sidebarContents: sidebarContents[fields.version],
-        githubUrl:
-          'https://' +
-          path.join(
-            'github.com',
-            owner,
-            repo,
-            'tree',
-            'master',
-            contentDir,
-            relativePath
-          ),
-        spectrumUrl:
-          spectrumHandle &&
-          getSpectrumUrl(spectrumHandle) + (spectrumPath || `/${repo}`),
         typescriptApiBox,
         versions: versionKeys, // only need to send version labels to client
         defaultVersion,

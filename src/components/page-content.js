@@ -216,14 +216,6 @@ export default function PageContent(props) {
             imagesLoaded={imagesLoaded === imagesToLoad}
           />
         )}
-        <AsideLink href={props.githubUrl}>
-          <IconGithub /> Edit on GitHub
-        </AsideLink>
-        {props.spectrumUrl && (
-          <AsideLink href={props.spectrumUrl}>
-            <SpectrumLogo /> Discuss on Spectrum
-          </AsideLink>
-        )}
       </Aside>
     </Container>
   );

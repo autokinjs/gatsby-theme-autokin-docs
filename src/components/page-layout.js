@@ -168,42 +168,7 @@ export default function PageLayout(props) {
           ref={sidebarRef}
           title={siteName}
           logoLink={logoLink}
-        >
-          <HeaderInner>
-            <StyledButton
-              variant="flat"
-              color="branded"
-              size="small"
-              className="title-sidebar"
-              onClick={openMenu}
-              ref={buttonRef}
-            >
-              {subtitle}
-              <StyledIcon />
-            </StyledButton>
-            {versions && versions.length > 0 && (
-              <SelectLink
-                useLink
-                size="small"
-                variant="hidden"
-                isPathActive={value => pathname.startsWith(value)}
-                style={{marginLeft: 8}}
-                options={[
-                  {
-                    text: defaultVersion
-                      ? getVersionLabel(defaultVersion)
-                      : 'Latest',
-                    value: '/'
-                  }
-                ].concat(
-                  versions.map(version => ({
-                    text: getVersionLabel(version),
-                    value: getVersionBasePath(version)
-                  }))
-                )}
-              />
-            )}
-          </HeaderInner>
+        >          
           {sidebarContents && (
             <SidebarNav
               contents={sidebarContents}
@@ -234,17 +199,6 @@ export default function PageLayout(props) {
           </MainRefContext.Provider>
         </Main>
       </FlexWrapper>
-      <DocsetSwitcher
-        siteName={menuTitle || siteName}
-        spectrumUrl={spectrumHandle && getSpectrumUrl(spectrumHandle)}
-        twitterUrl={twitterHandle && `https://twitter.com/${twitterHandle}`}
-        youtubeUrl={youtubeUrl}
-        navItems={navItems}
-        footerNavConfig={footerNavConfig}
-        open={menuOpen}
-        buttonRef={buttonRef}
-        onClose={closeMenu}
-      />
     </Layout>
   );
 }

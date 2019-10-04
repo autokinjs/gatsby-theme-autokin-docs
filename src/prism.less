@@ -1,6 +1,6 @@
 /* from https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/#include-css */
 
-@font-family-monospace: 'Source Code Pro', monospace;
+@font-family-monospace: 'Monaco', 'Source Code Pro', monospace;
 
 .gatsby-code-title {
   display: flex;
@@ -26,14 +26,17 @@
  * Add back the container background-color, border-radius, padding, margin
  * and overflow that we removed from <pre>.
  */
-// .gatsby-highlight {
-//   background: @color-background;
-//   border: 1px solid @color-divider;
-//   border-radius: 4px;
-//   margin: 0.5em 0 1.45em;
-//   padding: 1em;
-//   overflow: auto;
-// }
+.gatsby-highlight {
+  // background: #000;
+  // border: 1px solid @color-divider;
+  border-radius: 4px;
+  // margin: 0.5em 0 1.45em;
+  // padding: 1em;
+  // overflow: auto;
+  -webkit-box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.15);
+-moz-box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.15);
+box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.15);
+}
 
 /**
  * Remove the default PrismJS theme background-color, border-radius, margin,
@@ -42,6 +45,13 @@
  * 2. Always fill the visible space in .gatsby-highlight.
  * 3. Adjust the position of the line numbers
  */
+
+.gatsby-highlight div > div:nth-child(2) {
+  background-color: #000;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
 .gatsby-highlight pre[class*="language-"] {
   background-color: transparent;
   margin: 0;
@@ -78,7 +88,8 @@
 */
 pre[class*="language-"],
 code[class*="language-"] {
-  color: @color-text1;
+  // color: @color-text1;
+  color: #fff;
   font-size: 15px;
   text-shadow: none;
   font-family: @font-family-monospace;

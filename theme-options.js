@@ -1,34 +1,5 @@
 const navConfig = {
-  'Autokin Basics': {
-    url: 'https://www.autokinjs.com/docs',
-    description:
-      'Learn.'
-  },
-  'Autokin Server': {
-    url: 'https://www.autokinjs.com/docs/autokin-server',
-    description:
-      'Configure.'
-  },
-  'Autokin Client (React)': {
-    url: 'https://www.autokinjs.com/docs/react',
-    description:
-      "Manage."
-  },
-  'Autokin Graph Manager': {
-    url: 'https://www.autokinjs.com/docs/graph-manager',
-    description:
-      "Enhanced security."
-  },
-  'Autokin Client (iOS)': {
-    url: 'https://www.autokinjs.com/docs/ios',
-    description:
-      "Operations."
-  },
-  'Autokin Link': {
-    url: 'https://www.autokinjs.com/docs/link',
-    description:
-      'Define a custom chain of actions that your client performs with each GraphQL operation.'
-  }
+  
 };
 
 const footerNavConfig = {
@@ -48,15 +19,15 @@ const footerNavConfig = {
 };
 
 module.exports = {
-  siteName: 'Autokin Docs',
-  menuTitle: 'Autokin Platform',
+  siteName: 'Autokin Automation',
+  menuTitle: 'Autokin Automation Platform',
   trackingId: 'UA-X74643563-13',
-  algoliaApiKey: 'x768e823959d35bbd51e4b2439be13fb7',
-  algoliaIndexName: 'autokinsearchdata',
+  algoliaApiKey: 'b486f2784ca0ce85a380724c2e5fb36a',
+  algoliaIndexName: 'autokin_docs',
   baseUrl: 'https://www.autokinjs.com',
   twitterHandle: 'autokinjs',
   spectrumHandle: 'Autokin',
-  youtubeUrl: 'https://www.youtube.com/',
+  youtubeUrl: 'https://www.youtube.com/autokin',
   logoLink: 'https://www.autokinjs.com/docs/',
   navConfig,
   footerNavConfig
