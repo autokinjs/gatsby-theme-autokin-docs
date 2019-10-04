@@ -174,6 +174,7 @@ export default function Search(props) {
 
     if (typeof docsearch !== 'undefined') {
       search.current = docsearch({
+        appId: props.appId,
         apiKey: props.apiKey,
         indexName: props.indexName,
         inputSelector: '#input',

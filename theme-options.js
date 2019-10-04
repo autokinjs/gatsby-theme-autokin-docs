@@ -22,6 +22,7 @@ module.exports = {
   siteName: 'Autokin Automation',
   menuTitle: 'Autokin Automation Platform',
   trackingId: 'UA-X74643563-13',
+  algoliaAppId: '9R9QR4QEL3',
   algoliaApiKey: 'b486f2784ca0ce85a380724c2e5fb36a',
   algoliaIndexName: 'autokin_docs',
   baseUrl: 'https://www.autokinjs.com',
